@@ -1,0 +1,66 @@
+#sudo apt-get install git -y
+-------------------------------------------------------------
+#mkdir git
+#cd git/
+
+#git init
+#git remote add origin "https://github.com/gagankubsad/*****.git"
+#git pull origin master
+---------------------------------------------------------------------------------------------------
+#git status
+#vi play.yml
+#git status
+#git add play.yml 
+#git commit -m " created play"
+#git push origin master
+---------------------------------------------------------------------------------------------
+#git status
+#vim service.yml
+#vim play.yml 
+#git status
+#git add play.yml
+#git add -A
+#git commit -m "modified play"
+#git status
+#git push origin master
+#git log
+-----------------------------------------------------------------------------------------------
+#git branch branch1 ---------creating new branch
+#git checkout branch1 ------to work on new branch created
+#vi vars.yml
+#git status
+#git add vars.yml
+#git commit -m "created vars.yml on branch1"
+#git checkout master  --------to work on master branch
+#ls    -----------you cant see the file "vars.yml" that created on "branch1"
+#git merge branch1      ---------once after merge only its possible to list  the vars.yml under "master" branch.
+-------------------------------------------------------------------------------------------------
+#git branch branch2 ---------creating new branch
+#git checkout branch2
+#vi task.yml
+#git status
+#git add task.yml 
+#git commit -m "created task file"
+#git checkout master
+#ls   --------------cant see task.yml
+#git checkout branch2
+#git rebase master
+#git checkout master
+#git rebase branch2
+#ls   --------------can see auto.sh
+----------------------------------------------------------------------------------------------------------------------------------
+#git checkout master
+#cat > file
+	gagan
+#git add file
+#git commit -m "111"
+#cat >> file
+	gagan
+	gagangagan
+#git add file
+#git commit -m "222"
+#git log
+#git checkout 75939a41 file
+#cat file 
+	gagan
+
